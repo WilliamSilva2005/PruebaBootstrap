@@ -11,6 +11,21 @@
 </head>
 <body>
 
+	<!-- Inicio OffCanvas -->
+	<div class="offcanvas offcanvas-start" id="demo2">
+	  	<div class="offcanvas-header">
+	    	<h1 class="offcanvas-title">Heading</h1>
+	    	<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	  	</div>
+	  	<div class="offcanvas-body">
+	    	<p>Facebook</p>
+	    	<p>Instagram</p>
+	    	<p>Twitter</p>
+	    	<button class="btn btn-secondary" type="button">Ver Mas</button>
+	  	</div>
+	</div>
+	<!-- Fin Offcanvas -->
+
 	<!-- Inicio del nav -->
 	<nav class="navbar navbar-expand-lg bg-warning">
 		<div class="container-fluid">
@@ -50,7 +65,7 @@
 
 	      <!-- Modal Header -->
 	      <div class="modal-header">
-	        <h4 class="modal-title" style = "color:#000000">Informcion Adicional</h4>
+	        <h4 class="modal-title" style = "color:#000000">Informacion Adicional</h4>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 	      </div>
 
@@ -65,9 +80,48 @@
 	      </div>
 
 	    </div>
-	  </div>
-	</div>
+	  </div>00
+	</div>00
 	<!-- Fin Modal 1 -->
+
+	<!-- Inicio Modal 2 -->
+	<div class="modal" id="informacion">
+	  <div class="modal-dialog mo0dal-sm">
+	    <div class="modal-content"0>
+00
+	      <!-- Modal Header -->
+	      <div class="modal-header">
+	        <h4 class="modal-title" style = "color:#000000">Datos Personales</h4>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+	      </div>
+
+	      <!-- Modal body -->
+	      <div class="modal-body" style="color:#000000">
+			William Andres Silva Salcedo
+			<br>
+			<br>
+			19 años
+			<br>
+			<br>
+			Ingeniero de Sistemas
+			<br>
+			<br>
+			Programación en Java y Python
+			<br>
+			<br>
+			
+
+	      </div>
+
+	      <!-- Modal footer -->
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	      </div>
+
+	    </div>
+	  </div0>
+	</div>n
+	<!-- Fin Modal 2 -->
 
 	<div class="container-fluid">
 	<!-- Inicio Corousel -->
@@ -114,9 +168,13 @@
 	<!-- Fin Corousel -->
 	</div>
 
-	<div class ="container">	
+	<div class ="container-fluid">	
 
 		<button type="button" class="btn btn-danger">Eliminar</button>
+		<br>
+	  	<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo2">
+	    Ver Offcanvas
+	  	</button>
 
 		<h2>Container</h2>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum id perspiciatis asperiores fugiat veritatis enim ea dolore voluptates neque ipsa quam, commodi quod placeat fugit ipsam dicta est obcaecati.</p>
@@ -128,6 +186,22 @@
 		<button type="button" class="btn btn-primary">Agregar</button>
 
 		<h2>Container Fluid</h2>
+		<!-- Inicio Card -->
+		<div class="container mt-3">
+  <!-- <h2>Card Image</h2>
+  <p>Image at the top (card-img-top):</p> -->
+  <div class="card" style="width:250px">
+    <img class="card-img-top" src="img/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">William Silva</h4>
+      <p class="card-text">Ingenierio de Sistemas</p>
+
+		  	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informacion">
+		    Ver Perfil
+		  	</button>
+    </div>
+  </div>
+  		<!-- Final Card -->
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non eveniet consectetur reiciendis facere quibusdam eius iure accusantium harum saepe, laudantium, provident molestiae recusandae enim ut placeat, repudiandae impedit perferendis.</p>
 
 		<h2>Dividir nuestra pagina web</h2>
