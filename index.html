@@ -13,50 +13,60 @@
 
 	<!-- Inicio OffCanvas -->
 	<div class="offcanvas offcanvas-start" id="demo2">
-	  	<div class="offcanvas-header">
-	    	<h1 class="offcanvas-title">Heading</h1>
-	    	<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-	  	</div>
-	  	<div class="offcanvas-body">
-	    	<p>Facebook</p>
-	    	<p>Instagram</p>
-	    	<p>Twitter</p>
-	    	<button class="btn btn-secondary" type="button">Ver Mas</button>
-	  	</div>
+
+		<div class="offcanvas-header">
+  		<h1 class="offcanvas-title">Heading</h1>
+    	<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  	</div>
+
+		<div class="offcanvas-body">
+  		<p>Facebook</p>
+    	<p>Instagram</p>
+    	<p>Twitter</p>
+    	<button class="btn btn-secondary" type="button">Ver Mas</button>
+  	</div>
+
 	</div>
 	<!-- Fin Offcanvas -->
 
+
 	<!-- Inicio del nav -->
 	<nav class="navbar navbar-expand-lg bg-warning">
+
 		<div class="container-fluid">
+
 			<a class="navbar-brand" href="#">Drapps</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	 		 <span class="navbar-toggler-icon"></span>
+ 		 	<span class="navbar-toggler-icon"></span>
 			</button>
+
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
  			 	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		 			<li class="nav-item">
-	      				<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-	    			</li>
-   				 	<li class="nav-item">
- 			 			<a class="nav-link" href="#">Contacto</a>
-	    			</li>
-	    			<li class="nav-item dropdown">
-	      				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	        				Sobre Nosotros
-	      				</a>
-	      				<ul class="dropdown-menu">
-	        				<li><a class="dropdown-item" href="#">Mision</a></li>
-	        				<li><a class="dropdown-item" href="#">Vision</a></li>
-	        				<li><hr class="dropdown-divider"></li>
-	        				<li><a class="dropdown-item" href="#">Politicas</a></li>
-	      				</ul>
-	   		 		</li>
-  				</ul>
+					<li class="nav-item">
+    				<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+    			</li>
+ 				 	<li class="nav-item">
+	 					<a class="nav-link" href="#">Contacto</a>
+    			</li>
+  				<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      				Sobre Nosotros
+    				</a>
+  					<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Mision</a></li>
+							<li><a class="dropdown-item" href="#">Vision</a></li>
+		  				<li><hr class="dropdown-divider"></li>
+		  				<li><a class="dropdown-item" href="#">Politicas</a></li>
+    				</ul>
+   		 		</li>
+				</ul>
 			</div>
+
 		</div>
+		
 	</nav>
 	<!-- Final del Nav -->
+
 
 	<!-- Inicio Modal 1 -->
 	<div class="modal" id="myModal">
@@ -201,7 +211,116 @@
     </div>
   </div>
   		<!-- Final Card -->
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non eveniet consectetur reiciendis facere quibusdam eius iure accusantium harum saepe, laudantium, provident molestiae recusandae enim ut placeat, repudiandae impedit perferendis.</p>
+
+  		<!-- Inicio acordeon -->
+      <div class="container mt-3">
+        <h2>Accordion Example</h2>
+        <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                Collapsible Group Item #1
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Collapsible Group Item #2
+            </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                Collapsible Group Item #3
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                Collapsible Group Item #4
+              </a>
+            </div>
+            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                Collapsible Group Item #5
+              </a>
+            </div>
+            <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Fin acordeon -->
+
+    <!-- Inicio scrollspy -->
+    <div class="container-fluid">
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-button">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Section 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Section 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+      <h1>Section 1</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    
+    <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+      <h1>Section 2</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    
+    <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+      <h1>Section 3</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+
+    
+    </div>
+
+    <!-- Fin scrollspy -->
 
 		<h2>Dividir nuestra pagina web</h2>
 
@@ -291,4 +410,4 @@
 
 	
 </body>
-</html>
+</html>	
